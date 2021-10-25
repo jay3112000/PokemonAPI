@@ -17,8 +17,15 @@ router.post('/',async(req,res)=>{
     
     const post=new Pokemon({
         name:req.body.name,
+        defense:req.body.defense,
+        height:req.body.height,
+        weight:req.body.weight,
+        hp:req.body.hp,
+        defense:req.body.defense,
+        types:req.body.types,
+        weaknesses:req.body.weaknesses,
+        next:req.body.next,
         attack:req.body.attack,
-        defense:req.body.defense
     });
     try{
         console.log(req.body)
